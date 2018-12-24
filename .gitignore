@@ -20,3 +20,9 @@ web/.htaccess
 
 # WP-CLI
 wp-cli.local.yml
+
+# Node Modules
+web/app/themes/node_modules/*
+
+# Yarn
+web/app/themes/yarn.lock
