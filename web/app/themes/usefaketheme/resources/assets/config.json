@@ -8,7 +8,7 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "ppmes/usefaketheme",
+  "publicPath": "/app/themes/usefaketheme",
   "devUrl": "http://usefakename.com",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",

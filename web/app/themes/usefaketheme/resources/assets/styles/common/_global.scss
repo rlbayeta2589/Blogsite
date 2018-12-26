@@ -1,0 +1,46 @@
+@mixin background($img) {
+	background-image: url("/app/themes/usefaketheme/dist/images/" + $img);
+}
+
+@mixin mobile_font($font_size) {
+	@media (max-width: 575px) {
+		font-size: $font_size + px;
+	}
+}
+
+@mixin responsive_font($font_size) {
+	@media (min-width: 576px) and (max-width: 1919px) {
+		font-size: $font_size + vw;
+		line-height: $font_size + vw;
+	}
+}
+
+@mixin large_screen_font($font_size) {
+	@media (min-width: 1920px) {
+		font-size: $font_size + px;
+	}
+}
+
+@font-face {
+  font-family: Arame;
+  src: url(../fonts/Arame-Regular.otf);
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url(../fonts/ProximaNovaRegular.otf);
+}
+
+@font-face {
+	font-family: ProximaNovaBold;
+	src: url(../fonts/ProximaNovaBold.otf);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.section {
+	height: 100%;
+	overflow: hidden;
+}

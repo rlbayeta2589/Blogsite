@@ -1,0 +1,135 @@
+.__landing-page {
+	.__parallax-banner {
+		height: 100%; 
+		background-color: rgba(0,0,0,0.5);
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url(../images/site-banner.jpg);
+
+		.__parallax-overlay {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			background: rgba(162, 162, 162, 0.2);
+		}
+	}
+
+	.__self-content {
+		position: relative;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+
+		.__self-name {
+			width: 65%;
+			margin-bottom: 5%;
+			text-transform: capitalize;
+			color: white;
+			text-shadow: -7px 6px rgba(80, 80, 80, 0.5);
+			text-transform: capitalize;
+
+			@include mobile_font(20);
+			@include responsive_font(9);
+			@include large_screen_font(40);
+
+			&:after{
+				content: '';
+				position: absolute;
+				height: 22vw;
+				width: 68vw;
+				left: -20vw;
+				top: -1vw;
+				background: rgba(0, 150, 232, 0.8);
+				z-index: -99;
+				border-radius: 0 100px 100px 0;
+			}
+
+			.__self-ext {
+				letter-spacing: -0.5vw;
+			}
+
+			.__white-border {
+				position: absolute;
+				height: 21vw;
+				width: 67.5vw;
+				left: -20vw;
+				top: -0.5vw;
+				border-radius: 0 100px 100px 0;
+				border: 5px solid white;
+			}
+		}
+
+		.__self-pretitle {
+			position: relative;
+			text-align: right;
+		    font-size: 2.3vw;
+    		line-height: 2.3vw;
+    		margin-bottom: 2%;
+    		color: #ffffff;
+
+			&:after {
+				content: '';
+				height: 3.5vw;
+				right: -10px;
+				top: -0.5vw;
+				width: 12vw;
+				position: absolute;
+				background: #0096e8;
+				z-index: -99;
+				border-radius: 0 20px 20px 0;
+				border: 0.35vw dotted white;
+				border-left: none;
+			}
+
+			.__ribbon {
+				position: absolute;
+				height: 3.5vw;
+				right: calc(11.5vw - 10px);
+				top: -0.5vw;
+				width: 3.5vw;
+				border-top: 1.75vw solid #0096e8;
+				border-bottom: 1.75vw solid #0096e8;
+				border-right: transparent;
+				border-left: 3vw solid transparent;
+			}
+
+			.__dotted-border {
+				position: absolute;
+				height: 3.5vw;
+				right: calc(11.9vw - 10px);
+				top: -0.5vw;
+				width: 2.6vw;
+				border-top: 0.35vw dotted white;
+				border-bottom: 0.35vw dotted white;
+			}
+		}
+
+		.__self-title {
+			color: white;
+			text-align: right;
+			font-weight: bold;
+			font-family: Arame;
+			position: relative;
+			letter-spacing: 3px;
+			text-shadow: 4px 3px #505050, 9px 8px #0096e8;
+
+			@include mobile_font(15);
+			@include responsive_font(6);
+			@include large_screen_font(30);
+
+			&:after {
+				content: '';
+				position: absolute;
+				height: 7vw;
+				width: 120vw;
+				top: -0.5vw;
+				right: -20vw;
+				background: rgba(0, 0, 0, 0.3);
+				z-index: -99;
+			}
+		}
+	}
+}
