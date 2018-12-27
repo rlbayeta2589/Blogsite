@@ -4,15 +4,18 @@ jQuery(document).ready(function($) {
             'Web Developer',
             'Front-end Developer',
             'Software Engineer',
-            'UPLB Graduate',
-            'BSCS Student',
+            'UPLB Alumni',
+            'BSCS Graduate',
             'Gamer',
             'Cat Lover',
             'Programmer',
             'Classic Introvert',
-            'Dreamer',
             'Filipino'
         ],
+
+        init_pageload: function () {
+            $('body').removeClass('preload');
+        },
 
         init_fullpage: function () {
             $('#__site_sections').fullpage({
@@ -34,10 +37,11 @@ jQuery(document).ready(function($) {
                 currentTitleIndex = (currentTitleIndex + 1 < global.TITLES.length) ? currentTitleIndex + 1 : 0;
                 titleElement.html(global.TITLES[currentTitleIndex]);
                 new Chaffle(document.getElementById('self-titles'),{speed:10,delay:30}).init();
-            }, 10000);
+            }, 8000);
         },
     };
 
+    global.init_pageload();
     global.init_fullpage();
     global.init_chaffle();
 });

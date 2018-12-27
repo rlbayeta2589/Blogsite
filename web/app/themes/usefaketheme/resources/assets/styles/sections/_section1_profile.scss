@@ -1,0 +1,92 @@
+.__profile-page {
+	&:before {
+		content: '';
+		height: 100%;
+		width: 40vw;
+		background: #ffd152;
+		position: absolute;
+		top: 0;
+		z-index: -999;
+		border-right: 0.3vw dashed #fff;
+		box-shadow: 0 4px 0 4px #ffd152, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+	}
+
+	&:after {
+		content: '';
+		width: 55vw;
+		height: 90%;
+		background: #ffffff;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		margin: auto;
+		z-index: -999;
+		border: 0.3vw solid black;
+		border-right: none;
+		box-shadow: 0 0 0 4px #ffffff, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+		border-radius: 10px 0 0 10px;
+	}
+
+	.__profile-image {
+		width: 25vw;
+		height: 25vw;
+		border-radius: 50%;
+		margin: auto;
+		position: relative;
+		top: 40%;
+		z-index: -100;
+		-webkit-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		transform: translateY(-50%);
+		background-image: url(../images/profile-image.jpg);
+		background-size: cover;
+
+		&-wrapper {
+			width: 27vw;
+			height: 27vw;
+			border-radius: 50%;
+			position: absolute;
+			top: -1vw;
+			left: -1vw;
+			z-index: -999;
+			background: transparent;
+			border: 0.3vw dashed #fff;
+		}
+	}
+
+	.__profile-info {
+		padding: 1vw 0.5vw 0 3vw;
+		max-height: 90vh;
+
+		.__profile-item {
+			margin-bottom: 0.4vw;
+
+			&.__item-half {
+				width: 50%;
+				display: inline;
+				float: left;
+			}
+
+			.__profile-title {
+				font-family: Orbitron;
+				font-size: 2vw;
+				margin-bottom: 0.4vw;
+			}
+
+			.__profile-value {
+				font-family: MeriendaOne;
+				font-size: 1vw;
+
+				&.__profile-about {
+					text-align: justify;
+				}
+			}		
+
+			.__linebreak {
+				height: 1vw;
+				display: block;
+			}
+		}
+	}
+}

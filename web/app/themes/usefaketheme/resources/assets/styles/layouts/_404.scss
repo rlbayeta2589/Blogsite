@@ -1,0 +1,46 @@
+.__404-page {
+  height: 80vh;
+  
+
+  @media (max-width: 575px) {
+    height: 50vh;
+  }
+
+
+  h2 {
+    font-family: $proxima;
+    font-size: 7vw;
+    text-align: center;
+
+    @media (max-width: 575px) {
+      font-size: 15vw;
+    }
+  }
+
+  .__error-wrapper { 
+    margin-bottom: 6vh;
+
+    p {
+      font-size: 1.2vw;
+
+      @media (max-width: 575px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .__button-404 {
+    background: transparent;
+    border: 1px solid #b4b4b4;
+    border-radius: 5px;
+    padding: 15px;
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.2vw;
+
+    @media (max-width: 575px) {
+      font-size: 16px;
+    }
+  }
+}

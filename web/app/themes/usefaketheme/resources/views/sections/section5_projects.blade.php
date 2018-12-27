@@ -1,3 +1,7 @@
-<div class="section">
-	<h1>PROJECTS</h1>
-</div>
+<section class="section __project-page">
+	<h1 class="__section-title __title-top">
+		<span class="__ribbon"></span>
+		<span class="__white-border"></span>
+		Projects
+	</h1>
+</section>
