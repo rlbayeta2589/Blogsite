@@ -30,9 +30,10 @@
 			color: white;
 			text-shadow: -7px 6px rgba(80, 80, 80, 0.5);
 			text-transform: capitalize;
-
+      font-size: 9vw;
+      
 			// @include mobile_font(20);
-			@include responsive_font(9);
+			// @include responsive_font(9);
 			// @include large_screen_font(40);
 
 			&:after{
@@ -124,9 +125,10 @@
 			position: relative;
 			letter-spacing: 3px;
 			text-shadow: 4px 3px #505050, 9px 8px #0096e8;
-
+      font-size: 6vw;
+      
 			// @include mobile_font(15);
-			@include responsive_font(6);
+			// @include responsive_font(6);
 			// @include large_screen_font(30);
 
 			&:after {
