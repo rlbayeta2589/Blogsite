@@ -1,0 +1,68 @@
+.__footer-wrapper {
+	position: fixed;
+	top: 0;
+	right: 0;
+	font-size: 1vw;
+
+	.__footer-inner {
+		position: relative;
+		height: auto;
+		width: 15vw;
+	}
+
+	.__footer-child {
+		position: absolute;
+		top: 0;
+		display: inline-block;
+		width: 2vw;
+		height: 1vw;
+		-webkit-transition: all .5s;
+		-o-transition: all .5s;
+		transition: all .5s;
+
+		.__footer-item {
+			width: 100%;
+			height: 100%;
+			background: #ffd152;
+			text-align: center;
+			color: white;
+			border-radius: 0 0 4px 4px;
+			cursor: pointer;
+			font-family: Jua;
+			border: 0.15vw solid red;
+			border-top: none;
+		}
+
+		.__footer-num {
+			line-height: 0.2vw;
+			visibility: hidden;
+			-webkit-transition: line-height 0.5s;
+			-o-transition: line-height 0.5s;
+			transition: line-height 0.5s;
+		}
+
+		&.active {
+			height: 3vw;
+
+			.__footer-num {
+				line-height: 4vw;
+				visibility: visible;
+			}
+		}
+
+		&:hover:not(.active) {
+			height: 2vw;
+
+			.__footer-num {
+				line-height: 2vw;
+				visibility: visible;
+			}
+		}
+
+		@for $i from 7 through 1 {
+			&:nth-child(#{8 - $i}) {
+				right: #{($i - 1) * 2.2}vw;
+			}
+		}
+	}
+}

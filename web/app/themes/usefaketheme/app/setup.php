@@ -12,7 +12,7 @@ use Roots\Sage\Template\BladeProvider;
  */
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('usefaketheme/fullpage.css', get_template_directory_uri() . '/assets/styles/fullpage.css', false, null);
-    wp_enqueue_script('usefaketheme/fullpage.js', get_template_directory_uri() . '/assets/scripts/fullPage.js', ['jquery'], null, true);
+    wp_enqueue_script('usefaketheme/fullpage.js', get_template_directory_uri() . '/assets/scripts/fullpage.js', ['jquery'], null, true);
     wp_enqueue_script('usefaketheme/chaffle.js', get_template_directory_uri() . '/assets/scripts/chaffle.min.js', null, null, true);
     wp_enqueue_script('usefaketheme/global.js', get_template_directory_uri() . '/assets/scripts/common/global.js', ['jquery'], null, true);
 
